@@ -1,32 +1,21 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p>
-      For a guide and recipes on how to configure / customize this project,<br>
-      check out the
-      <a href="https://cli.vuejs.org" target="_blank" rel="noopener">vue-cli documentation</a>.
-    </p>
-    <h3>Installed CLI Plugins</h3>
+    
+    <h2>Link to my practices</h2>
     <ul>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-babel" target="_blank" rel="noopener">babel</a></li>
-      <li><a href="https://github.com/vuejs/vue-cli/tree/dev/packages/%40vue/cli-plugin-router" target="_blank" rel="noopener">router</a></li>
+      <li><a href="https://github.com/TheCrow95T">Github</a></li>
+      <li><a href="https://replit.com/@TheCrow95T">Replit</a></li>
+      <li><a href="https://www.codewars.com/users/thecrow95_">Codewars</a></li>
     </ul>
-    <h3>Essential Links</h3>
-    <ul>
-      <li><a href="https://vuejs.org" target="_blank" rel="noopener">Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank" rel="noopener">Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank" rel="noopener">Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank" rel="noopener">Twitter</a></li>
-      <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
-    </ul>
-    <h3>Ecosystem</h3>
-    <ul>
-      <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
-      <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
-      <li><a href="https://github.com/vuejs/vue-devtools#vue-devtools" target="_blank" rel="noopener">vue-devtools</a></li>
-      <li><a href="https://vue-loader.vuejs.org" target="_blank" rel="noopener">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">awesome-vue</a></li>
-    </ul>
+
+    <h2>Some random picture taken by me</h2>
+    <div class="img-div">
+      <img src="../assets/image1.jpg" alt="">
+      <img src="../assets/image2.jpg" alt="">
+      <img src="../assets/image3.jpg" alt="">
+      <img src="../assets/image4.jpg" alt="">
+    </div>
   </div>
 </template>
 
@@ -41,18 +30,45 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  font-weight: bold;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
 }
+
 li {
   display: inline-block;
-  margin: 0 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  background-color: rgb(163, 184, 201);
+  margin: 10px 10px;
+  padding: 15px 30px;
 }
+
 a {
-  color: #42b983;
+  color: #6554b1;
+}
+
+.img-div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 40%;
+  margin: 20px 20px;
+}
+
+@media (max-width: 700px) {
+  img {
+    max-width: 100%;
+  }
 }
 </style>
